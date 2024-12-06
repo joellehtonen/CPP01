@@ -2,11 +2,11 @@
 
 int main(void)
 {
-    Zombie *heap;
+    Zombie *first;
     
-    heap = newZombie("heap");
-    heap->announce();
-    delete heap;
+    first = newZombie("heap");
+    first->announce();
+    delete first;
 
     randomChump("stack");
 }
