@@ -1,16 +1,16 @@
 #include "HumanA.hpp"
 
-HumanA::HumanA(std::string humansName, Weapon type)
+HumanA::HumanA(std::string newName, Weapon &type)
+    : name(newName), weapon(type)
 {
-    this->name = humansName;
-    this->weapon = type;
+    return ;
 }
 
 void    HumanA::attack(void)
 {
     std::string type;
 
-    type = HumanA::weapon.getType();
+    type = this->weapon.getType();
 
     std::cout << this->name << " attacks with their " << type << std::endl;
 }
