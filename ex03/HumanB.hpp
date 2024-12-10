@@ -9,7 +9,7 @@ class HumanB
 
     public:
         HumanB(std::string name);
-        ~HumanB() {};
+        ~HumanB()   {};
 
         std::string name;
         Weapon      *weapon;

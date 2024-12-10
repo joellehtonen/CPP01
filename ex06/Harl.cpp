@@ -30,20 +30,36 @@ void	Harl::error(void)
 	std::cout << std::endl;
 };
 
-void	Harl::complain(std::string level)
+void	Harl::complainFilter(std::string level)
 {
 	void (Harl::*functionPointers[])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 	std::string complaints[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	int index = -1;
 
 	for (int i = 0; i < 4; i++)
 	{
 		if (complaints[i] == level)
 		{
-			(this->*functionPointers[i])();
-			return ;
+			index = i;
+			break ;
 		}
 	}
-	std::cerr << "Error. Not a valid level" << std::endl;
-	std::cout << "Acceptable levels are: DEBUG / INFO / WARNING / ERROR" << std::endl;
+	
+	std::cout << std::endl;
+	switch (index)
+	{
+		case 0:
+			(this->*functionPointers[0])();
+		case 1:
+			(this->*functionPointers[1])();
+		case 2:
+			(this->*functionPointers[2])();
+		case 3:
+			(this->*functionPointers[3])();
+			break ;
+		default:
+			std::cerr << "Error. Not a valid level" << std::endl;
+			std::cout << "Acceptable levels are: DEBUG / INFO / WARNING / ERROR" << std::endl;
+	}
 	return ;
 };
