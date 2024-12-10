@@ -1,10 +1,7 @@
-NAME	=	unnecessary_violence
+NAME	=	sed_is_for_losers
 CC		=	c++
 FLAGS	=	-Wall -Wextra -Werror -std=c++20
-SRCS	=	main.cpp \
-			HumanA.cpp \
-			HumanB.cpp \
-			Weapon.cpp
+SRCS	=	main.cpp
 OBJS	=	$(SRCS:.cpp=.o)
 
 all: $(NAME)
