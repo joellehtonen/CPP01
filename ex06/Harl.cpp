@@ -58,7 +58,7 @@ void	Harl::complainFilter(std::string level)
 			(this->*functionPointers[3])();
 			break ;
 		default:
-			std::cerr << "Error. Not a valid level" << std::endl;
+			std::cout << "Error. Not a valid level" << std::endl;
 			std::cout << "Acceptable levels are: DEBUG / INFO / WARNING / ERROR" << std::endl;
 	}
 	return ;

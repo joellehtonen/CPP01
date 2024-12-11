@@ -6,7 +6,7 @@ bool checkIfValidArgs(int argc, char **argv)
 {
 	if (argc != 4)
 	{
-		std::cerr << "Error. Wrong argument count" << std::endl;
+		std::cout << "Error. Wrong argument count" << std::endl;
 		std::cout << "   How to use:" << std::endl;
 		std::cout << "   ARG1: the file to be copied" << std::endl;
 		std::cout << "   ARG2: string1 to be replaced in the new file" << std::endl;
@@ -16,7 +16,7 @@ bool checkIfValidArgs(int argc, char **argv)
 	std::string string1 = argv[2];
 	if (string1.empty() == true)
 	{
-		std::cerr << "Error. String to find and replace cannot be empty" << std::endl;
+		std::cout << "Error. String to find and replace cannot be empty" << std::endl;
 		return (false);
 	}
 	return (true);
@@ -36,14 +36,14 @@ int main (int argc, char **argv)
 	infile.open(oldFile, std::ios::in);
 	if (infile.is_open() == false)
 	{
-		std::cerr << "Error. Cannot open infile" << std::endl;
+		std::cout << "Error. Cannot open infile" << std::endl;
 		return (EXIT_FAILURE);
 	}
 
 	outfile.open(oldFile + ".replace", std::ios::out);
 	if (outfile.is_open() == false)
 	{
-		std::cerr << "Error. Cannot open outfile" << std::endl;
+		std::cout << "Error. Cannot open outfile" << std::endl;
 		infile.close();
 		return (EXIT_FAILURE);
 	}

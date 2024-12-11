@@ -4,7 +4,7 @@ int main (int argc, char **argv)
 {
 	if (argc != 2)
 	{
-		std::cerr << "Error. Too few or too many arguments" << std::endl;
+		std::cout << "Error. Too few or too many arguments" << std::endl;
 		return (EXIT_FAILURE);
 	}
 	Harl complainer;
