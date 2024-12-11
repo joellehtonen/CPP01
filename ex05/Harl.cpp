@@ -5,7 +5,7 @@ void Harl::debug(void)
 	std::cout << "this is a mild [DEBUG] message" << std::endl;
 	std::cout << "d-bug likes food without spices or condiments, and its drink of choice is room temperature tap water without added minerals" << std::endl;
 	std::cout << "d-bug likes all kinds of (not loud) music, but cannot really name any artists it particularly likes" << std::endl;
-	std::cout << "its favorite weather is a cloudy overcast, but often it wants to play it safe and wear sunscreen anyway" << std::endl;
+	std::cout << "its favorite weather is a cloudy overcast, but often d-bug wants to play it safe and wears sunscreen anyway" << std::endl;
 	std::cout << std::endl;
 }
 void	Harl::info(void)
@@ -19,7 +19,7 @@ void	Harl::info(void)
 void	Harl::warning(void)
 {
 	std::cout << "This Is a Serious [WARNING] Message." << std::endl;
-	std::cout << "Its Handshake Is Firm Enough to Hurt, And When Amused, Warren Ing Exhales Air Through Its Nose for Exactly 1 Second." << std::endl;
+	std::cout << "Warren Ing Has a Handshake Firm Enough to Hurt, And When Amused, Warren Ing Exhales Air Through Its Nose for Exactly 1 Second." << std::endl;
 	std::cout << "Warren Ing Has No Time for Stupid And Childish Joke Messages Such as These." << std::endl;
 	std::cout << std::endl;
 };
