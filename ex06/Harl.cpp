@@ -2,7 +2,7 @@
 
 void Harl::debug(void)
 {
-	std::cout << "this is a mild [DEBUG] message" << std::endl;
+	std::cout << "this is a [DEBUG] message about mild and humble d-bug" << std::endl;
 	std::cout << "d-bug likes food without spices or condiments, and its drink of choice is room temperature tap water without added minerals" << std::endl;
 	std::cout << "d-bug likes all kinds of (not loud) music, but cannot really name any artists it particularly likes" << std::endl;
 	std::cout << "its favorite weather is a cloudy overcast, but often d-bug wants to play it safe and wears sunscreen anyway" << std::endl;
@@ -10,15 +10,15 @@ void Harl::debug(void)
 }
 void	Harl::info(void)
 {
-	std::cout << "This is a moderate and polite [INFO] message." << std::endl;
-	std::cout << "N. Fough dresses in business casual Mon-Fri, and quietly resents all public non-Christmas holidays." << std::endl;
-	std::cout << "Despite its frequent claims to the contrary, N. Fough does not confidently understand how tax brackets work." << std::endl;
-	std::cout << "N. Fough votes every election year for center-left or center-right, whoever is not in the government at the time." << std::endl;
+	std::cout << "This is [INFO] message about moderate and polite N. Foe." << std::endl;
+	std::cout << "N. Foe dresses in business casual Mon-Fri, and quietly resents all public non-Christmas holidays." << std::endl;
+	std::cout << "Despite its frequent claims to the contrary, N. Foe does not confidently understand how tax brackets work." << std::endl;
+	std::cout << "N. Foe votes every election year for center-left or center-right, whoever is not in the government at the time." << std::endl;
 	std::cout << std::endl;
 };
 void	Harl::warning(void)
 {
-	std::cout << "This Is a Serious [WARNING] Message." << std::endl;
+	std::cout << "This Is a Serious [WARNING] Message About Serious Warren Ing." << std::endl;
 	std::cout << "Warren Ing Has a Handshake Firm Enough to Hurt, And When Amused, Warren Ing Exhales Air Through Its Nose for Exactly 1 Second." << std::endl;
 	std::cout << "Warren Ing Has No Time for Stupid And Childish Joke Messages Such as These." << std::endl;
 	std::cout << std::endl;
