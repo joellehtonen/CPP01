@@ -12,8 +12,8 @@ void	Harl::info(void)
 {
 	std::cout << "This is [INFO] message about moderate and polite N. Foe." << std::endl;
 	std::cout << "N. Foe dresses in business casual Mon-Fri, and quietly resents all public non-Christmas holidays." << std::endl;
-	std::cout << "Despite its frequent claims to the contrary, N. Faux does not confidently understand how tax brackets work." << std::endl;
-	std::cout << "N. Foe votes every election year for center-left or center-right, whoever is not in the government at the time." << std::endl;
+	std::cout << "Despite its frequent claims to the contrary, N. Foe does not confidently understand how tax brackets work." << std::endl;
+	std::cout << "N. Foe votes every election year for the center-left or the center-right." << std::endl;
 	std::cout << std::endl;
 };
 void	Harl::warning(void)
