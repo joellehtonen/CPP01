@@ -3,6 +3,7 @@
 HumanB::HumanB(std::string newName)
 {
     this->name = newName;
+    this->weapon = nullptr;
 }
 
 void    HumanB::attack(void)
@@ -10,7 +11,9 @@ void    HumanB::attack(void)
     if (this->weapon == nullptr)
         std::cout << this->name << " attacks with their fists" << std::endl;
     else
+    {
         std::cout << this->name << " attacks with their " << this->weapon->getType() << std::endl;
+    }
 }
 
 void    HumanB::setWeapon(Weapon &weapon)
